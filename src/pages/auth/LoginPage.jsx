@@ -28,7 +28,7 @@ const LoginPage = ({authUser,setAuthUser}) => {
 		return str.charAt(0).toUpperCase()+str.slice(1);
 	}
 	return (
-		<div className="h-screen bg-[url('../../../public/bg.jpg')] bg-cover bg-center grid place-items-center">
+		<div className="h-screen bg-gradient-to-b from-black to-slate-500 bg-cover bg-center grid place-items-center">
 			<div className='relative top-0 left-0 h-screen w-screen bg-gradient-to-b from-black/60 to-slate-500/50 backdrop-blur-sm'></div>
 			<div className='absolute inset-0 m-auto lg:w-2/3 flex-1 flex flex-col lg:flex-row lg:gap-20 justify-center items-center'>
 				<div className='lg:w-1/2 text-white'>
