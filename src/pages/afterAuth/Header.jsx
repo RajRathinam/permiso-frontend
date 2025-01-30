@@ -41,7 +41,7 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
                             <li className='flex flex-row' onClick={() => { setProfile((prev) => !prev) }}>
                                 <div> <div className="avatar">
                                     <div className="w-[30px] h-[30px] rounded-full">
-                                        <img src="../../../public/raj.png" />
+                                        <img src="../../../public/profileAvatar.jpeg" />
                                     </div>
                                 </div>
                                     <h1 className='text-lg'>Profile</h1>
