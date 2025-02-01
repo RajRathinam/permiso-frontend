@@ -1,5 +1,7 @@
 import React from 'react';
 import ThemeController from "../../components/common/ThemeController";
+import { FaRegUser } from "react-icons/fa";
+
 
 const ProfileContent = () => {
 
@@ -26,7 +28,7 @@ const ProfileContent = () => {
             <hr className="border-t-2 border-slate-500/50 mb-3 mt-2"></hr>
             <div className="avatar justify-center">
                 <div className="w-[75%] rounded">
-                    <img src="../../../public/profileAvatar.jpeg" />
+                   <FaRegUser className='w-full h-full'/>
                 </div>
             </div>
             <hr className="border-t-2 border-slate-500/50 mt-3"></hr>

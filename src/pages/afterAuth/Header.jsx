@@ -4,6 +4,7 @@ import { TbLogout2 } from "react-icons/tb";
 import { RiMenu4Line } from "react-icons/ri";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { FaRegUser } from "react-icons/fa";
 
 
 const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
@@ -40,8 +41,8 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
                             </li>
                             <li className='flex flex-row' onClick={() => { setProfile((prev) => !prev) }}>
                                 <div> <div className="avatar">
-                                    <div className="w-[30px] h-[30px] rounded-full">
-                                        <img src="../../../public/profileAvatar.jpeg" />
+                                    <div className="w-[30px] h-[30px]">
+                                        <FaRegUser className='text-3xl relative' />
                                     </div>
                                 </div>
                                     <h1 className='text-lg'>Profile</h1>
