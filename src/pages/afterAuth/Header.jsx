@@ -86,8 +86,8 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
                             </Link>
                     <li onClick={() => { setProfile((prev) => !prev) }} className='pl-1'>
                         <div> <div className="avatar">
-                            <div className="w-[30px] h-[30px] rounded-full">
-                                <img src="../../../public/raj.png" />
+                            <div className="w-[30px] h-[30px]">
+                            <FaRegUser className='text-3xl relative' />
                             </div>
                         </div>
                             <h1 className='text-lg pl-1'>Profile</h1>

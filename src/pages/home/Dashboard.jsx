@@ -21,13 +21,13 @@ const Dashboard = () => {
                     <div className="py-4 rounded-lg shadow-lg hover:shadow-2xl">
                         <Link to="/single-request" className="flex flex-col justify-center items-center text-slate-500 ">
                             <FaUser size={100} />
-                            <h2 className="text-xl font-medium mb-4">On-Duty Request</h2>
+                            <h2 className="text-xl mb-4">On-Duty Request</h2>
                         </Link>
                     </div>
                     <div className="py-4 rounded-lg shadow-lg hover:shadow-2xl">
                         <Link to="/team-onduty" className="flex flex-col justify-center items-center text-slate-500">
                             <MdGroups size={100} />
-                            <h2 className="text-xl font-medium mb-4">Team On-Duty</h2>
+                            <h2 className="text-xl mb-4">Team On-Duty</h2>
                         </Link>
                     </div>
                     <div className="py-4 rounded-lg shadow-lg hover:shadow-2xl">
@@ -50,7 +50,7 @@ const Dashboard = () => {
                                 <line x1="9" y1="13" x2="15" y2="13" />
                                 <line x1="9" y1="17" x2="13" y2="17" />
                             </svg>
-                            <h2 className="text-xl font-medium mb-4">Leave Requests</h2>
+                            <h2 className="text-xl mb-4">Leave Requests</h2>
                         </Link>
                     </div>
                     <div className="py-4 rounded-lg shadow-lg hover:shadow-2xl">
@@ -76,7 +76,7 @@ const Dashboard = () => {
                                 <path d="M14 20l4-4 2 2-4 4z" />
                                 <path d="M16 18l-4 4" />
                             </svg>
-                            <h2 className="text-xl font-medium mb-4">Rise Complaint</h2>
+                            <h2 className="text-xl mb-4">Rise Complaint</h2>
                         </Link>
                     </div>
                 </div>
