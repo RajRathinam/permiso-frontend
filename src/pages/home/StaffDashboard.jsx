@@ -83,7 +83,7 @@ const StaffDashboard = () => {
                                     <div className="avatar">
                                         <div className="mask mask-squircle h-12 w-12">
                                             <img
-                                                src={user.avatar || "../../../public/profileAvatar.jpeg"}
+                                                src={user.avatar || "/profileAvatar.jpeg"}
                                                 alt="Avatar Tailwind CSS Component" />
                                         </div>
                                     </div>

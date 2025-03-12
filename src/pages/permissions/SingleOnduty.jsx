@@ -47,7 +47,7 @@ const SingleOnduty = () => {
           </div>
        </div>
             <div>
-              <img src="../../../public/raj.png" className="w-[130px] h-[150px] object-cover border border-gray-300" />
+              <img src="/raj.png" className="w-[130px] h-[150px] object-cover border border-gray-300" />
             </div>
         </div>
         <div>
