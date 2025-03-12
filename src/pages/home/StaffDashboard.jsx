@@ -6,7 +6,7 @@ const StaffDashboard = () => {
     const userData = [
         {
         id: 1,
-        avatar: "../../../public/raj.png",
+        avatar: "/raj.png",
         name: "Raj Rathinam",
         studentId: "8208E22CSR082",
         department: "CSE",
@@ -16,7 +16,7 @@ const StaffDashboard = () => {
         },
         {
         id: 2,
-        avatar: "../../../public/info.png",
+        avatar: "/info.png",
         name: "Shathis Kumar",
         studentId: "8210E22CSR102",
         department: "ECE",
@@ -26,7 +26,7 @@ const StaffDashboard = () => {
         },
         {
         id: 3,
-        avatar: "../../../public/bahu.jpg",
+        avatar: "/bahu.jpg",
         name: "Syed Bahu",
         studentId: "8220E22CSR122",
         department: "MECH",
