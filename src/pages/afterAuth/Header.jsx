@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { BsBell } from "react-icons/bs";
 import { TbLogout2 } from "react-icons/tb";
 import { RiMenu4Line } from "react-icons/ri";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import { FaRegUser } from "react-icons/fa";
 
 
 const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
@@ -15,9 +14,12 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
         localStorage.clear();
         setAuthUser('')
     }
+    useEffect(() => {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+      }, []); 
 
     return (
-        <div className="drawer">
+        <div className="drawer sticky top-0 left-0 ">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
@@ -41,8 +43,8 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
                             </li>
                             <li className='flex flex-row' onClick={() => { setProfile((prev) => !prev) }}>
                                 <div> <div className="avatar">
-                                    <div className="w-[30px] h-[30px]">
-                                        <FaRegUser className='text-3xl relative' />
+                                    <div className="w-[30px] h-[30px] rounded-full">
+                                        <img src="../../../public/raj.png" />
                                     </div>
                                 </div>
                                     <h1 className='text-lg'>Profile</h1>
@@ -86,8 +88,8 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
                             </Link>
                     <li onClick={() => { setProfile((prev) => !prev) }} className='pl-1'>
                         <div> <div className="avatar">
-                            <div className="w-[30px] h-[30px]">
-                            <FaRegUser className='text-3xl relative' />
+                            <div className="w-[30px] h-[30px] rounded-full">
+                                <img src="../../../public/raj.png" />
                             </div>
                         </div>
                             <h1 className='text-lg pl-1'>Profile</h1>

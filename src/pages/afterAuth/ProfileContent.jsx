@@ -1,7 +1,6 @@
 import React from 'react';
 import ThemeController from "../../components/common/ThemeController";
-import { FaRegUser } from "react-icons/fa";
-
+import ChangePassword from './ChangePassword';
 
 const ProfileContent = () => {
 
@@ -21,30 +20,31 @@ const ProfileContent = () => {
     return (
         <div className="flex w-full flex-col">
             <div className='flex justify-between'>
-                <span></span>
-                <h1 className='text-3xl font-semibold text-center'>Profile</h1>
+                <h1 className='text-3xl font-semibold text-center flex justify-center items-center'>Profile</h1>
                 <ThemeController />
             </div>
             <hr className="border-t-2 border-slate-500/50 mb-3 mt-2"></hr>
-            <div className="avatar justify-center">
+            <div className="avatar justify-center -z-20">
                 <div className="w-[75%] rounded">
-                   <FaRegUser className='w-full h-full'/>
+                    <img src="../../../public/raj.png" />
                 </div>
             </div>
             <hr className="border-t-2 border-slate-500/50 mt-3"></hr>
-            <div className="bg-base-300  grid place-items-start px-2 py-2">Full Name : {data.fullName}</div>
+            <div className="bg-base-300  grid place-items-start px-2 py-2"><b>Full Name : {data.fullName}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">Register Number : {data.registerNumber}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>Register Number : {data.registerNumber}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">Date of Birth : {data.dateOfBirth}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>Date of Birth : {data.dateOfBirth}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">Class & Section : {data.classSection}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>Class & Section : {data.classSection}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">Department : {data.department}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>Department : {data.department}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">E-mail : {data.contactInfo.email}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>E-mail : {data.contactInfo.email}</b></div>
             <hr className="border-t-2 border-slate-500/50"></hr>
-            <div className="bg-base-300 grid place-items-start px-2 py-2">Phone Number : {data.contactInfo.phone}</div>
+            <div className="bg-base-300 grid place-items-start px-2 py-2"><b>Phone Number : {data.contactInfo.phone}</b></div>
+            <hr className="border-t-2 mb-2 border-slate-500/50"></hr>
+           <ChangePassword/>
         </div>
     )
 }

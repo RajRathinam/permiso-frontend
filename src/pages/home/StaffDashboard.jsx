@@ -16,8 +16,8 @@ const StaffDashboard = () => {
         },
         {
         id: 2,
-        avatar: "",
-        name: "John Doe",
+        avatar: "../../../public/info.png",
+        name: "Shathis Kumar",
         studentId: "8210E22CSR102",
         department: "ECE",
         year: "B-II year",
@@ -26,8 +26,8 @@ const StaffDashboard = () => {
         },
         {
         id: 3,
-        avatar: "../../../public/raj.png",
-        name: "Emily Chen",
+        avatar: "../../../public/bahu.jpg",
+        name: "Syed Bahu",
         studentId: "8220E22CSR122",
         department: "MECH",
         year: "B-IV year",
@@ -46,43 +46,13 @@ const StaffDashboard = () => {
         },
         {
         id: 5,
-        avatar: "../../../public/raj.png",
+        avatar: "",
         name: "Sophia Patel",
         studentId: "8240E22CSR162",
         department: "CHEM",
         year: "B-III year",
         requestType: "Project Request",
         date: "20/02/2025"
-        },
-        {
-        id: 6,
-        avatar: "",
-        name: "Michael Kim",
-        studentId: "8250E22CSR182",
-        department: "ECE",
-        year: "B-II year",
-        requestType: "Internship Request",
-        date: "25/02/2025"
-        },
-        {
-        id: 7,
-        avatar: "",
-        name: "Michael Kim",
-        studentId: "8250E22CSR182",
-        department: "ECE",
-        year: "B-II year",
-        requestType: "Internship Request",
-        date: "25/02/2025"
-        },
-        {
-        id: 8,
-        avatar: "",
-        name: "Michael Kim",
-        studentId: "8250E22CSR182",
-        department: "ECE",
-        year: "B-II year",
-        requestType: "Internship Request",
-        date: "25/02/2025"
         }
         ]
         
@@ -137,7 +107,7 @@ const StaffDashboard = () => {
                             </td>
                             <th className='text-center'>
                               <Link to="/team-onduty">
-                              <button className="py-2 px-4 rounded-lg bg-gradient-to-r from-slate-500/10 to-slate-700/20 hover:from-slate-200 hover:to-slate-400">Details</button>
+                              <button className="py-2 px-4 rounded-lg bg-gradient-to-r from-slate-500/10 to-slate-700/20 hover:from-slate-200 hover:text-black hover:to-slate-400">Details</button>
                               </Link>
                             </th>
                         </tr>)

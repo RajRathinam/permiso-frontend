@@ -9,7 +9,7 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ["light", "black", "cupcake","nord","winter","dark"], // Enabling only the light theme
+    themes: ["sunset", "cupcake","nord","winter","dark"], // Enabling only the light theme
   },
 }
 
