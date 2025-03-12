@@ -43,23 +43,34 @@ const Onduty = () => {
             <h2 className="px-1"><b>Date</b> : {date.toLocaleDateString()}</h2>
           </div>
           <div className="flex flex-col sm:flex-row border-b-2">
-            <h2 className="w-full sm:w-[60%] border-l-2 border-r-2 p-1 flex"><b className="pr-1">Reason</b> :
-              <select className="pl-1 w-full bg-white outline-none">
+            <h2 className="w-full sm:w-[50%] border-l-2 border-r-2 p-1 flex"><b className="pr-1">Reason</b> :
+              <select className="pl-1 w-full bg-white outline-none appearance-none">
                 <option value="">Select...</option>
-                <option value="">Academics</option>
-                <option value="">Extracurriculars</option>
-                <option value="">Fieldwork</option>
-                <option value="">Official</option>
+                <option value="">Industrial Visit (IV)</option>
+                <option value="">Project/Research Work</option>
+                <option value="">Technical Competitions</option>
+                <option value="">Conference Presentation</option>
+                <option value="">Workshop Participation</option>
+                <option value="">Seminar Participation</option>
+                <option value="">Paper Presentation</option>
+                <option value="">Lab Sessions in Other Institutions</option>
+                <option value="">Practical Sessions in Other Institutions</option>
+                <option value="">Sports Events</option>
+                <option value="">Cultural Fest Participation</option>
+                <option value="">Club Activities & Social Service</option>
+                <option value="">Event Organizing Committee</option>
+                <option value="">Placement Drive</option>
+                <option value="">Higher Studies Admission Process</option>
               </select>
             </h2>
-            <h2 className="w-full sm:flex-1 border-r-2 p-1"><b>Date</b> : {date.toLocaleDateString()} to {date.toLocaleDateString()}</h2>
+            <h2 className="w-full sm:flex-1 border-r-2 p-1"><b>Date</b> : <input type='date' className='text-start bg-white outline-none' /><b> - </b><input type='date' className='text-start bg-white  outline-none' /></h2>
           </div>
           <div className="flex flex-col sm:flex-row border-b-2">
-            <h2 className="w-full sm:w-[60%] border-l-2 border-r-2 p-1"><b>Event</b> : Anna University Zone Level</h2>
-            <h2 className="w-full sm:flex-1 border-r-2 p-1"><b>Venue</b> : Thanjavur, AVVM College</h2>
+            <h2 className="w-full sm:w-[50%] border-l-2 border-r-2 p-1"><b>Event</b> : <input type='text' placeholder='enter event name' className='focus:outline-none focus:ring-0 bg-white' /></h2>
+            <h2 className="w-full sm:flex-1 border-r-2 p-1"><b>Venue</b> : <input type='text' placeholder='enter venue name' className='focus:outline-none focus:ring-0 bg-white' /></h2>
           </div>
           <div className="flex flex-col sm:flex-row border-b-2 mb-2">
-            <h2 className="w-full border-l-2 border-r-2 p-1"><b>Number Of Participants</b> : 17</h2>
+            <h2 className="w-full border-l-2 border-r-2 p-1"><b>Number Of Participants</b> : <input type='number' placeholder=' enter number of days' className='w-auto focus:outline-none focus:ring-0 bg-white' /></h2>
           </div>
           <div className="flex flex-col sm:flex-row border-y-2 mb-3">
             <div className="w-full sm:w-[13%] border-l-2 border-r-2 p-1 flex justify-center items-center"><h2><b>On-Duty </b>:</h2></div>
@@ -73,19 +84,19 @@ const Onduty = () => {
               </div>
               <div className="flex flex-col sm:flex-row">
                 <div className="w-full sm:w-1/2 flex">
-                  <div className="w-full sm:w-1/2 text-center border-r-2"><h2>12/01/2025</h2></div>
-                  <div className="w-full sm:w-1/2 text-center border-r-2"><h2>12/01/2025</h2></div>
+                  <div className="w-full sm:w-1/2 text-center border-r-2"><input type='date' className='text-center bg-white outline-none' /></div>
+                  <div className="w-full sm:w-1/2 text-center border-r-2"><input type='date' className='text-center bg-white outline-none' /></div>
                 </div>
                 <div className="w-full sm:w-1/2 flex">
-                  <div className="w-full sm:w-1/2 text-center border-r-2"><h2>2:15</h2></div>
-                  <div className="w-full sm:w-1/2 text-center"><h2>4:15</h2></div>
+                  <div className="w-full sm:w-1/2 text-center border-r-2"><input type="time" /></div>
+                  <div className="w-full sm:w-1/2 text-center"><input type="time" /></div>
                 </div>
               </div>
             </div>
           </div>
           <div className="mb-2">
             <textarea
-              className="w-full bg-white p-1 border border-gray-300 resize-none"
+              className="w-full bg-white p-1 border border-gray-300 resize-none outline-none"
               rows="3"
               placeholder="Enter your remarks here..."
             />
@@ -155,7 +166,7 @@ const Onduty = () => {
             On-Duty for the Above Students
           </div>
         </div>
-        <button onClick={handlePrint} className="btn btn-primary mx-auto my-5">Download PDF</button>
+        {/* <button onClick={handlePrint} className="btn btn-primary mx-auto my-5">Download PDF</button> */}
       </div>
       )
 }

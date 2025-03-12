@@ -18,19 +18,19 @@ const Dashboard = () => {
                 {/* On-Duty and Leave Request Section */}
                 <div className="lg:w-2/3 grid grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-3">
                     {/* On-Duty Requests */}
-                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl">
+                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 duration-200 transition-all">
                         <Link to="/single-request" className="flex flex-col justify-center items-center text-secondary-500 ">
                             <FaUser size={100} />
                             <h2 className="text-lg mt-2 lg:text-xl font-medium mb-4">On-Duty Request</h2>
                         </Link>
                     </div>
-                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl">
+                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 duration-300 transition-all">
                         <Link to="/team-onduty" className="flex flex-col justify-center items-center text-secondary-500">
                             <MdGroups size={100} />
                             <h2 className="text-lg mt-2 lg:text-xl font-medium mb-4">Team On-Duty</h2>
                         </Link>
                     </div>
-                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl">
+                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 duration-300 transition-all">
                         <Link to="/leave-request" className="flex flex-col justify-center items-center text-secondary-500">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ const Dashboard = () => {
                             <h2 className="text-lg mt-2 lg:text-xl font-medium mb-4">Leave Requests</h2>
                         </Link>
                     </div>
-                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl">
+                    <div className="py-4 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 duration-300 transition-all">
                         <Link to="/complaint" className="flex flex-col justify-center items-center text-secondary-500">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

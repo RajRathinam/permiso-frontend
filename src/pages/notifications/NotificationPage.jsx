@@ -18,7 +18,7 @@ const NotificationPage = () => {
                 {notifications.map((notif) => (
                     <div 
                         key={notif.id} 
-                        className={`p-2 flex items-center gap-2 lg:gap-3 rounded-md shadow-lg ${notif.status==="success" ? ' border-l-4 border-green-600' : 'border-l-4 border-red-500'}`}
+                        className={`p-2 flex  hover:scale-110 duration-300 transition-all items-center gap-2 lg:gap-3 rounded-md shadow-lg ${notif.status==="success" ? ' border-l-4 border-green-600' : 'border-l-4 border-red-500'}`}
                     >
                         <span className={`w-17 h-17 p-1 lg:w-20 lg:h-20 text-4xl font-extrabold text-white flex justify-center items-center rounded-full ${notif.status==="success" ? ' bg-green-600' : 'bg-red-500'}`}>
                             {notif.status==="success" ? <FiCheck/>:<IoClose/>}

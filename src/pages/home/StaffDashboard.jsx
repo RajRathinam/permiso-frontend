@@ -81,10 +81,10 @@ const StaffDashboard = () => {
                             <td>
                                 <div className="flex items-center ml-12 gap-3">
                                     <div className="avatar">
-                                        <div className="mask mask-squircle h-12 w-12">
+                                        <div className="mask mask-squircle h-12 w-12 hover:scale-125 duration-300 transition-all">
                                             <img
                                                 src={user.avatar || "/profileAvatar.jpeg"}
-                                                alt="Avatar Tailwind CSS Component" />
+                                                alt="Avatar Tailwind CSS Component"/>
                                         </div>
                                     </div>
                                     <div>
