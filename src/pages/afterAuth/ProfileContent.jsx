@@ -26,7 +26,7 @@ const ProfileContent = () => {
             <hr className="border-t-2 border-slate-500/50 mb-3 mt-2"></hr>
             <div className="avatar justify-center -z-20">
                 <div className="w-[75%] rounded">
-                    <img src="../../../public/raj.png" />
+                    <img src="/raj.png" />
                 </div>
             </div>
             <hr className="border-t-2 border-slate-500/50 mt-3"></hr>
