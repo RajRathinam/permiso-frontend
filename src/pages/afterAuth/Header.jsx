@@ -11,7 +11,7 @@ const Header = ({ profile, setProfile, setAuthUser, authUser }) => {
     const [count, setCount] = useState(10);
 
     const handleLogout = () => {
-        localStorage.clear();
+        localStorage.removeItem("authUser");
         setAuthUser('')
     }
     useEffect(() => {
